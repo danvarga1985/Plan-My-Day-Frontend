@@ -1,0 +1,24 @@
+<div class="entry-unit d-flex flex-row" [ngStyle]="entryStyles()">
+  <div class="d-flex align-self-center">
+    <button class="expand" *ngIf="entry.hasChildren && entry.expanded" title="Collapse child nodes"
+      (click)="expandParent(false)">
+      <img src="../../../../../assets/img/hierarchy-tools/collapse.png" alt="">
+    </button>
+    <button class="expand" *ngIf="entry.hasChildren && !entry.expanded" title="Expand child nodes"
+      (click)="expandParent(true)">
+      <img src="../../../../../assets/img/hierarchy-tools/expand.png" alt="">
+    </button>
+    <div *ngIf="!entry.hasChildren" class="expand placeholder"></div>
+  </div>
+  <div class="entry" mat-button [matMenuTriggerFor]="menu" [ngClass]="{'event':entry.entryType==='EVENT','task':entry.entryType==='TASK' ,
+  'parent':entry.hasChildren, 'wip':entry.entryPhase==='WIP',
+  'closed':entry.closed,'selected': selectedEntryId===entry.id }">
+    {{entry.title}}
+  </div>
+  <mat-menu #menu="matMenu" xPosition="before">
+    <app-entry-tools [entryId]="entry.id" [entryTitle]="entry.title" [projectId]="projectId"
+      [enabledOperations]="enabledOperations"></app-entry-tools>
+  </mat-menu>
+  <div style="max-width: 0px;">
+  </div>
+</div>

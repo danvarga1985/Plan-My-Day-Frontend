@@ -1,0 +1,106 @@
+.entry {
+  background-color: white;
+  border-style: solid;
+  border-color: #e1e3e1;
+  border-width: 1.1px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  padding: 2px;
+  z-index: 0;
+  width: 100%;
+  max-height: var(--entry-row-height);
+  cursor: pointer;
+}
+
+.entry.task {
+  color: #5279b3;
+}
+
+.entry.task:hover {
+  filter: brightness(150%);
+}
+
+.entry.event {
+  color: white;
+  background-color: rgb(102, 177, 114);
+  font-weight: bold;
+}
+
+.entry.event:hover {
+  filter: brightness(125%);
+}
+
+.entry.parent {
+  font-weight: bold;
+  background-color: #f4f4f4fa;
+}
+
+.entry.parent:hover {
+  filter: brightness(150%);
+}
+
+.entry.wip {
+  font-weight: normal;
+  color: black;
+  background-color: #f8e056;
+}
+
+.entry.wip:hover {
+  filter: brightness(110%);
+}
+
+.entry.closed {
+  font-weight: normal;
+  color: darkslategrey;
+  background-color: lightgrey;
+}
+
+.entry.closed:hover {
+  filter: brightness(110%);
+}
+
+.entry-unit {
+  position: relative;
+}
+
+.expand {
+  max-height: 20px;
+  max-width: 20px;
+  min-height: 20px;
+  min-width: 20px;
+  padding: 0;
+  border-color: grayscale($color: #00000065);
+  border-width: 1px;
+  border-radius: 3px;
+
+  :hover {
+    filter: brightness(150%);
+  }
+
+  img {
+    min-height: 13px;
+    min-width: 13px;
+    max-height: 13px;
+    max-width: 13px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+}
+
+::ng-deep .cdk-overlay-pane {
+  margin-right: -10px;
+  margin-top: -40px;
+
+  .mat-menu-panel {
+    min-height: 46px;
+    min-width: 0px;
+
+    .mat-menu-content {
+      margin: 7px;
+      padding: 0px;
+    }
+  }
+}

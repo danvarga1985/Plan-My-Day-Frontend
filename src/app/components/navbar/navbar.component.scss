@@ -1,0 +1,47 @@
+.environment {
+  color: black;
+  background-color: #96b8ed;
+  position: absolute;
+  font-weight: bold;
+  transform: rotate(-45deg);
+  z-index: 1000;
+  top: -23px;
+  left: -30px;
+  height: 30px;
+  width: 100px;
+  padding: 20px;
+  font-size: 14px;
+}
+
+.navbar-brand,
+.nav-link {
+  color: darkslategrey;
+}
+
+.navbar.my-theme {
+  // background-color: #5279b3;
+  background-color: #f4f4f4fa;
+  // background-color: lightslategray;
+  // background-color: #5279b3;
+  box-shadow: 0px 5px 5px lightgray;
+}
+
+.modal-opening-button {
+  cursor: pointer;
+}
+
+.only-active {
+  margin-left: 24px;
+  white-space: nowrap;
+  margin-bottom: 0px;
+  padding-bottom: 0px !important;
+
+  .form-group {
+    margin-bottom: 0px;
+  }
+
+  label {
+    padding-left: 0px;
+    color: #212529;
+  }
+}

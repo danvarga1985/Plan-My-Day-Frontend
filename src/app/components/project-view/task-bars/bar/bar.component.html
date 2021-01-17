@@ -1,0 +1,5 @@
+<div class="bar-background d-flex">
+  <div class="bar align-self-center entry" [ngClass]="{'event':entry.entryType==='EVENT','task':entry.entryType==='TASK' ,
+  'parent':entry.hasChildren, 'wip':entry.entryPhase==='WIP',
+  'completed':entry.entryPhase==='COMPLETED' }" [ngStyle]="barStyles()"></div>
+</div>

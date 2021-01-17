@@ -1,0 +1,54 @@
+.operation-header {
+  width: max-content;
+}
+
+.empty-task-header {
+  background-color: transparent;
+  width: var(--entry-width);
+}
+
+.header {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  width: max-content;
+}
+
+.task-header {
+  background-color: #5279b3;
+  font-size: 15px;
+  width: var(--entry-width);
+  min-height: calc(2 * var(--header-row-height));
+}
+
+.header-item {
+  background-color: #5279b3;
+  font-weight: bold;
+  font-size: 11px;
+  width: var(--bar-width);
+  min-height: var(--header-row-height);
+}
+
+.header-item.selected {
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+}
+
+.form-group row {
+  min-width: fit-content;
+}
+
+label {
+  white-space: nowrap;
+}
+
+.step-button {
+  min-width: 160px;
+  max-width: 160px;
+}
+
+#firstWeeksMonday {
+  min-width: 400px;
+  max-width: 400px;
+}

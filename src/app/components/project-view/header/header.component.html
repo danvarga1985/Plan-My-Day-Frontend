@@ -1,0 +1,27 @@
+<div class="header d-flex flex-row">
+  <div class="d-flex align-items-end flex-column">
+    <div class="task-header align-self-center mt-auto">
+      Tasks
+    </div>
+  </div>
+  <div>
+    <div class="d-flex flex-row justify-content-between">
+      <button class="btn-pmd btn-pmd-2 step-button" (click)="previousWeek()">&lt; Previous week</button>
+
+      <div id="firstWeeksMonday" class="form-group row mb-0 font-weight-normal">
+        <label for="dataPicker" class="label col-sm-4 col-form-label">First Monday</label>
+        <app-date-time-picker id="dataPicker" [(selectedDate)]="firstDate" [dateEnabled]="true"
+          (selectedDateChange)="firstDateChanged()">
+        </app-date-time-picker>
+      </div>
+
+      <button class="btn-pmd btn-pmd-2 step-button" (click)="nextWeek()">Next week &gt;</button>
+    </div>
+    <div class="d-flex flex-row">
+      <div *ngFor="let hi of headerArray">
+        <div class="header-item">{{formattedDate(hi)}}</div>
+        <div class="header-item">{{weekdayName(hi)}}</div>
+      </div>
+    </div>
+  </div>
+</div>

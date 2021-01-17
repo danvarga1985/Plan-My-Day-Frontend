@@ -1,0 +1,93 @@
+@import "../../../variables.scss";
+
+.dropdown:hover .dropdown-menu {
+  display: flex;
+}
+
+.add-single-entry-set-date {
+  min-width: 60px;
+  background-color: transparent;
+  margin-left: calc((-1) * var(--calendar-entry-width) / 2 - 20px);
+  min-width: 40px;
+  max-height: 40px;
+
+  .dropdown-item {
+    margin-top: -10px;
+    padding: 0px;
+    color: white;
+    font-size: 35px;
+    background-color: $control-blue;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 20px;
+    height: 40px;
+    width: 40px;
+    outline: none;
+
+    div {
+      margin-top: -12px;
+      margin-left: 6px;
+    }
+  }
+}
+
+.header {
+  font-weight: bold;
+  text-align: center;
+  width: max-content;
+
+  .add-single-entry {
+    z-index: 1;
+    position: absolute;
+
+    button {
+      color: white;
+      font-size: 35px;
+      background-color: $control-blue;
+      border-style: none;
+      border-radius: 20px;
+      height: 40px;
+      width: 40px;
+      outline: none;
+
+      div {
+        margin-top: -10px;
+      }
+    }
+  }
+
+  .date-selector {
+    z-index: 2;
+
+    .previous-week,
+    .next-week {
+      mat-icon {
+        font-size: 36px;
+        margin-bottom: 10px;
+      }
+    }
+
+    app-pmd-datepicker {
+      mat-form-field {
+        padding-bottom: 5px;
+      }
+    }
+  }
+
+  .header-item {
+    color: white;
+    background-color: $control-blue;
+    font-weight: bold;
+    font-size: 13px;
+    width: var(--calendar-entry-width);
+    min-height: var(--header-row-height);
+  }
+
+  .header-item.selected {
+    color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+  }
+}

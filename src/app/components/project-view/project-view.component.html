@@ -1,0 +1,17 @@
+<div class="mb-4">
+  <app-navbar (refresh)="refreshProjectViewData($event)"></app-navbar>
+</div>
+
+<div class="ml-5">
+  <app-project-view-header></app-project-view-header>
+  <div id="project-view-body" class="d-flex d-row">
+    <app-entry-hierarchy [entries]="visibleEntries" [projectId]="projectId" (expand)="expandParent($event)">
+    </app-entry-hierarchy>
+    <div id="graph">
+      <div class="weekend w1"></div>
+      <div class="weekend w2"></div>
+      <app-project-view-task-bars id="bars" [entries]="visibleEntries"></app-project-view-task-bars>
+      <div class="d-none entry-row" *ngFor="let e of entries"></div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "plan-my-day-mages-of-code-dev",
+    "staging": "plan-my-day-dev",
+    "production": "plan-my-day-mages-of-code"
+  }
+}

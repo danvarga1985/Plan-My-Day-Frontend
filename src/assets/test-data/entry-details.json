@@ -1,0 +1,13 @@
+{
+  "id": 11,
+  "userId": 13,
+  "title": "child",
+  "description": "childchild",
+  "date": "2020-01-17@10:20",
+  "duration": "2020-01-17@01:30",
+  "deadline": "2020-01-18@00:00",
+  "entryType": "EVENT",
+  "entryPhase": "UNSTARTED",
+  "finished": false,
+  "child": true
+}

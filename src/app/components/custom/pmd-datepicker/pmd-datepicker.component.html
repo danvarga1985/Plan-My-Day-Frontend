@@ -1,0 +1,6 @@
+<mat-form-field appearance="fill">
+  <mat-label>Week's Monday</mat-label>
+  <input matInput [matDatepicker]="dp" [formControl]="selectedDate" (dateChange)="handleDateChange($event)">
+  <mat-datepicker-toggle matSuffix [for]="dp"></mat-datepicker-toggle>
+  <mat-datepicker #dp></mat-datepicker>
+</mat-form-field>

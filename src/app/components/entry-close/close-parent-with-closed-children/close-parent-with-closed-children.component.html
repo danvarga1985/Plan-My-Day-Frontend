@@ -1,0 +1,24 @@
+<div class="modal-header">
+  <h3>Close parent</h3>
+</div>
+
+<div class="modal-body">
+
+  <h6>All other subtasks/events of selected task’s parent task are closed. Do you close parent task as well?</h6>
+
+  <!--title-->
+  <div class="form-group row">
+    <label for="title" class="label col-sm-1 col-form-label">Title</label>
+    <div id="title" class="form-control align-self-stretch">
+      {{parentEntry.title}}
+    </div>
+  </div>
+
+</div>
+
+<div class="modal-footer">
+  <div class="float-right">
+    <button class="btn btn-danger mr-1" (click)="closeParent()">Yes</button>
+    <button class="btn btn-secondary ml-1" (click)="cancelParentClose()">No</button>
+  </div>
+</div>

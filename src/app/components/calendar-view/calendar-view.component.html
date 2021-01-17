@@ -1,0 +1,20 @@
+<div class="mb-4">
+  <app-navbar></app-navbar>
+</div>
+
+<div class="ml-5">
+  <app-calendar-view-header (refreshEntries)="refreshEntries()"></app-calendar-view-header>
+
+  <div class="entries d-flex flex-row">
+    <div class="days-array d-flex flex-column" *ngFor="let day of entries">
+      <div class="entry" *ngFor="let entry of day" [ngClass]="{'memo' : entry.entryType==='MEMO', 'event' : entry.entryType==='EVENT','unstarted': entry.entryPhase==='NONRELEVANT' && entry.entryType==='TASK' || entry.entryPhase==='UNSTARTED',
+        'wip': entry.entryPhase==='WIP','closed': entry.closed}" mat-button [matMenuTriggerFor]="menu">
+        {{entry.title}}
+        <mat-menu #menu="matMenu">
+          <app-entry-tools [entryId]="entry.id" [entryTitle]="entry.title" [projectId]="null"
+            [enabledOperations]="enabledOperations"></app-entry-tools>
+        </mat-menu>
+      </div>
+    </div>
+  </div>
+</div>

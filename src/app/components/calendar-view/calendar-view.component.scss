@@ -1,0 +1,45 @@
+.entries {
+  background-color: #f4f4f4fa;
+  width: fit-content;
+  height: 75vh;
+
+  .days-array {
+    width: var(--calendar-entry-width);
+
+    .entry {
+      min-height: 60px;
+      max-height: 60px;
+      border-style: solid;
+      border-color: #e1e3e1;
+      border-width: 1px;
+      padding: 4px;
+      cursor: pointer;
+
+      &.memo {
+        background-color: #ffffcc;
+        font-style: italic;
+      }
+
+      &.event {
+        color: white;
+        background-color: rgb(102, 177, 114);
+        font-weight: bold;
+      }
+
+      &.unstarted {
+        color: #5279b3;
+        background-color: white;
+      }
+
+      &.wip {
+        color: black;
+        background-color: #f8e056;
+      }
+
+      &.closed {
+        color: gray;
+        background-color: lightgrey;
+      }
+    }
+  }
+}

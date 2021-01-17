@@ -1,0 +1,53 @@
+#project-view-body {
+  max-height: 550px;
+  overflow: auto;
+  position: relative;
+  max-width: fit-content;
+}
+
+#graph {
+  position: relative;
+  height: fit-content;
+}
+
+.weekend {
+  min-width: calc(2 * var(--bar-width));
+  height: 100%;
+  background-color: rgb(235, 249, 250);
+  z-index: -1;
+  position: absolute;
+}
+
+.weekend.w1 {
+  left: calc(5 * var(--bar-width));
+}
+
+.weekend.w2 {
+  left: calc(12 * var(--bar-width));
+}
+
+.bars {
+  z-index: 2;
+  position: absolute;
+}
+
+.entry-row {
+  height: var(--entry-row-height);
+}
+
+:host ::ng-deep .popover-body {
+  padding: 0px !important;
+}
+
+:host ::ng-deep .popover .arrow {
+  display: none !important;
+}
+
+:host ::ng-deep .popover.bs-popover-auto[x-placement^=right],
+:host ::ng-deep .popover.bs-popover-right {
+  margin-left: 0px !important;
+}
+
+:host ::ng-deep ngb-popover-window {
+  box-shadow: 5px 5px rgba(0, 0, 0, .2) !important;
+}

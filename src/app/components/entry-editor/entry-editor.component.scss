@@ -1,0 +1,105 @@
+label {
+  min-width: 150px;
+  width: 150px;
+}
+
+#title {
+  width: 70%;
+}
+
+#description {
+  width: 70%;
+}
+
+.entryType {
+  padding: 5px;
+  width: 70px;
+  height: 40px;
+  text-align: center;
+  border-style: solid;
+  border-color: #e1e3e1;
+  border-width: 1.1px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.task {
+  color: #5279b3;
+  background: white;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.event {
+  color: white;
+  background-color: darkgreen;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.memo {
+  color: black;
+  background-color: #fcfbb1;
+  font-size: 17px;
+  font-style: italic;
+}
+
+.unselected {
+  background-color: gainsboro;
+  color: grey;
+}
+
+.entryPhase {
+  padding: 5px;
+  width: 70px;
+  height: 40px;
+  text-align: center;
+  border-style: solid;
+  border-color: #e1e3e1;
+  border-width: 1.1px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.unstarted {
+  color: #5279b3;
+  background: white;
+  font-size: 25px;
+  padding-top: 0;
+}
+
+.wip {
+  font-weight: normal;
+  color: black;
+  background-color: #e8cc5d;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.completed {
+  color: greenyellow;
+  background-color: white;
+  font-size: 28px;
+  font-weight: bolder;
+  padding-top: 0;
+}
+
+.unselected {
+  background-color: gainsboro;
+  color: grey;
+}
+
+.close-entry {
+  margin-left: 21px;
+  white-space: nowrap;
+  margin-bottom: 0px;
+  padding-bottom: 0px !important;
+
+  .form-group {
+    margin-bottom: 0px;
+  }
+
+  label {
+    padding-left: 0px;
+  }
+}

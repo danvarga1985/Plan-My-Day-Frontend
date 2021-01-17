@@ -1,0 +1,35 @@
+<div class="header d-flex flex-row">
+  <div>
+    <div class="add-single-entry">
+      <button (click)="addSingleEntry()">
+        <div>+</div>
+      </button>
+    </div>
+    <div class="date-selector d-flex flex-row justify-content-center">
+      <button mat-button color="primary" class="btn-pmd btn-pmd-2 previous-week" (click)="previousWeek()">
+        <mat-icon aria-hidden="false" aria-label="Example home icon">navigate_before</mat-icon>
+      </button>
+
+      <app-pmd-datepicker [(startDate)]="firstDate" (selectedDateChange)="firstDateChanged($event)">
+      </app-pmd-datepicker>
+
+      <button mat-button color="primary" class="btn-pmd btn-pmd-2 next-week" (click)="nextWeek()">
+        <mat-icon aria-hidden="false" aria-label="Example home icon">navigate_next</mat-icon>
+      </button>
+    </div>
+    <div class="d-flex flex-row">
+      <div *ngFor="let hi of headerArray">
+        <div class="dropdown dropright">
+          <div class="dropdown-menu add-single-entry-set-date" (click)="addSingleEntry(hi)">
+            <a class="dropdown-item" href="#">
+              <div>+</div>
+            </a>
+          </div>
+          <div class="header-item">{{formattedDate(hi)}}
+          </div>
+          <div class="header-item">{{weekdayName(hi)}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

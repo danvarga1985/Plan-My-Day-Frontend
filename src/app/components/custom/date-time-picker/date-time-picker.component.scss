@@ -1,0 +1,102 @@
+.custom-day {
+  text-align: center;
+  padding: 0.185rem 0.25rem;
+  border-radius: 1rem;
+  display: inline-block;
+  width: 2rem;
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.custom-day:hover:not(.hidden),
+.custom-day.focused:not(.hidden) {
+  background-color: #e6e6e6;
+}
+
+.weekend {
+  background-color: #5279b3;
+  border-radius: 0rem;
+  color: white;
+}
+
+.weekend:hover,
+.weekend.focused {
+  background-color: #e6e6e6;
+  border-radius: 1rem;
+}
+
+.hidden {
+  display: none;
+  text-align: center;
+  padding: 0.185rem 0.25rem;
+  border-radius: 1rem;
+  width: 2rem;
+}
+
+:host ::ng-deep .ngb-dp-weekday {
+  color: #5279b3;
+}
+
+:host ::ng-deep .bg-primary {
+  background-color: greenyellow !important;
+}
+
+input {
+  max-width: 110px;
+}
+
+.btn-pmd.calendar {
+  padding-left: 2px;
+  padding-right: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: initial;
+  background-color: #f4f4f4fa;
+  border-color: #e1e3e1;
+
+  img {
+    max-width: 20px;
+    max-height: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+.input-group-append {
+  position: relative;
+}
+
+.add-one-day {
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+  padding-top: 0px;
+  max-height: 40px;
+}
+
+.square-button {
+  display: flex;
+  min-width: var(--square-button-size);
+  color: crimson;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  max-width: 40px;
+  max-height: 40px;
+  min-width: 40px;
+  min-height: 40px;
+  padding: 0px;
+
+  img {
+    height: 17px;
+    width: 17px;
+  }
+}
+
+.clear img {
+  height: 13px;
+  width: 13px;
+}

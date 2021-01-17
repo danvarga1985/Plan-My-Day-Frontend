@@ -1,0 +1,167 @@
+:root {
+  --entry-width: 400px;
+  --entry-row-height: 30px;
+  --bar-width: 70px;
+  --bar-height: 25px;
+  --header-row-height: 17px;
+  --square-button-size: 42px;
+  --calendar-entry-width: 200px;
+}
+
+h3 {
+  color: #5279b3;
+}
+
+label {
+  color: #5279b3;
+}
+
+.modal-header {
+  justify-content: space-around;
+}
+
+.btn-link {
+  color: #5279b3;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+
+.btn-pmd {
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .btn-pmd {
+    transition: none
+  }
+}
+
+.btn-pmd:hover {
+  color: #212529;
+  text-decoration: none
+}
+
+.btn-pmd.focus,
+.btn-pmd:focus {
+  outline: 0;
+  box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25)
+}
+
+.btn-pmd.disabled,
+.btn-pmd:disabled {
+  opacity: .65
+}
+
+a.btn-pmd.disabled,
+fieldset:disabled a.btn-pmd {
+  pointer-events: none
+}
+
+.btn-pmd-2 {
+  color: #585858;
+  font-weight: bold;
+  background-color: #f4f4f4fa;
+  border-color: #e1e3e1;
+  text-align: center;
+}
+
+.btn-pmd-2:hover {
+  color: #fff;
+  background-color: #e1e3e1;
+  border-color: #e1e3e1
+}
+
+.btn-pmd-2.focus,
+.btn-pmd-2:focus {
+  box-shadow: 0 0 0 .2rem rgba(38, 143, 255, .5)
+}
+
+.btn-pmd-2.disabled,
+.btn-pmd-2:disabled {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff
+}
+
+.btn-pmd-2:not(:disabled):not(.disabled).active,
+.btn-pmd-2:not(:disabled):not(.disabled):active,
+.show>.btn-pmd-2.dropdown-toggle {
+  color: #fff;
+  background-color: #989898;
+  border-color: #989898
+}
+
+.btn-pmd-2:not(:disabled):not(.disabled).active:focus,
+.btn-pmd-2:not(:disabled):not(.disabled):active:focus,
+.show>.btn-pmd-2.dropdown-toggle:focus {
+  box-shadow: 0 0 0 .2rem rgba(38, 143, 255, .5)
+}
+
+app-pmd-datepicker {
+  .mat-form-field-appearance-fill {
+    background-color: inherit;
+  }
+
+  mat-form-field {
+    padding-bottom: 7px;
+
+    .mat-form-field-wrapper {
+      padding-bottom: 0px;
+
+      .mat-form-field-flex {
+        background-color: inherit;
+      }
+
+      .mat-form-field-flex {
+        padding: 0px;
+
+        .mat-form-field-infix {
+          width: 150px;
+          padding-bottom: 0px;
+
+          input {
+            text-align: right;
+            background-color: inherit;
+
+          }
+        }
+
+        .mat-form-field-label-wrapper {
+          visibility: hidden;
+        }
+
+        .mat-form-field-suffix {
+          top: 4px;
+        }
+      }
+    }
+
+    .mat-form-field-underline {
+      visibility: hidden;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@import "../../variables.scss";
+
+.tool-item {
+  height: $tool-item-size;
+  width: $tool-item-size;
+}
+
+.tool-item:hover {
+  filter: brightness(150%);
+}
+
+:host ::ng-deep .popover .arrow {
+  display: none !important;
+}

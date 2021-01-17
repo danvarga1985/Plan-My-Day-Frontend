@@ -1,0 +1,5 @@
+<div class="d-flex flex-row">
+  <div *ngFor="let ti of tools">
+    <img class="tool-item" src="{{ti.imgPath}}" alt="" srcset="" (click)="ti.action()">
+  </div>
+</div>

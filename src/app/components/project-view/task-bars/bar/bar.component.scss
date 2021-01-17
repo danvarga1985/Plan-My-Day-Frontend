@@ -1,0 +1,42 @@
+.bar-background {
+  min-width: calc(14 * var(--bar-width));
+  height: var(--entry-row-height);
+  border-style: solid;
+  border-color: #e1e3e1;
+  border-width: 1.1px;
+}
+
+.bar {
+  background-color: #5279b3;
+  background-color: #86b5fc;
+  min-width: var(--bar-width);
+  max-width: var(--bar-width);
+  height: var(--bar-height);
+}
+
+.entry.task {
+  color: #5279b3;
+}
+
+.entry.event {
+  color: white;
+  background-color: rgb(102, 177, 114);
+  font-weight: bold;
+}
+
+.entry.parent {
+  font-weight: bold;
+  background-color: #f4f4f4fa;
+}
+
+.entry.wip {
+  font-weight: normal;
+  color: black;
+  background-color: #f8e056;
+}
+
+.entry.completed {
+  font-weight: normal;
+  color: darkslategrey;
+  background-color: lightgrey;
+}

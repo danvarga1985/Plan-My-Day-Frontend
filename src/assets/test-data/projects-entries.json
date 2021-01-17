@@ -1,0 +1,161 @@
+{
+  "id": 1,
+  "userId": 1,
+  "title": "planMyDay",
+  "description": "",
+  "date": "2020-01-01@10:20",
+  "duration": "2020-01-01@01:00",
+  "deadline": "2020-01-10@10:20",
+  "entryType": "TASK",
+  "entryPhase": "UNSTARTED",
+  "addEntry": [{
+    "id": 2,
+    "userId": 1,
+    "title": "project identification",
+    "description": "",
+    "date": "2020-01-01@10:20",
+    "duration": "2020-01-01@01:00",
+    "deadline": "2020-01-10@10:20",
+    "entryType": "TASK",
+    "entryPhase": "UNSTARTED",
+    "addEntry": [{
+        "id": 3,
+        "userId": 1,
+        "title": "kick-off",
+        "description": "",
+        "date": "2020-01-01@10:20",
+        "duration": "2020-01-01@01:00",
+        "deadline": "2020-01-10@10:20",
+        "entryType": "TASK",
+        "entryPhase": "UNSTARTED",
+        "addEntry": [{
+            "id": 4,
+            "userId": 1,
+            "title": "create materials",
+            "description": "",
+            "date": "2020-01-01@10:20",
+            "duration": "2020-01-01@01:00",
+            "deadline": "2020-01-10@10:20",
+            "entryType": "TASK",
+            "entryPhase": "UNSTARTED",
+            "addEntry": [{
+                "id": 5,
+                "userId": 1,
+                "title": "1",
+                "description": "",
+                "date": "2020-01-01@10:20",
+                "duration": "2020-01-01@01:00",
+                "deadline": "2020-01-10@10:20",
+                "entryType": "TASK",
+                "entryPhase": "READY"
+              },
+              {
+                "id": 6,
+                "userId": 1,
+                "title": "2",
+                "description": "",
+                "date": "2020-01-01@10:20",
+                "duration": "2020-01-01@01:00",
+                "deadline": "2020-01-10@10:20",
+                "entryType": "TASK",
+                "entryPhase": "READY"
+              }, {
+                "id": 7,
+                "userId": 1,
+                "title": "3",
+                "description": "",
+                "date": "2020-01-01@10:20",
+                "duration": "2020-01-01@01:00",
+                "deadline": "2020-01-10@10:20",
+                "entryType": "TASK",
+                "entryPhase": "WIP"
+              }, {
+                "id": 8,
+                "userId": 1,
+                "title": "4",
+                "description": "",
+                "date": "2020-01-01@10:20",
+                "duration": "2020-01-01@01:00",
+                "deadline": "2020-01-10@10:20",
+                "entryType": "TASK",
+                "entryPhase": "UNSTARTED"
+              }
+            ]
+          },
+          {
+            "id": 9,
+            "userId": 1,
+            "title": "meeting",
+            "description": "",
+            "date": "2020-01-01@10:20",
+            "duration": "2020-01-01@01:00",
+            "deadline": "2020-01-10@10:20",
+            "entryType": "EVENT"
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "userId": 1,
+        "title": "planning",
+        "description": "",
+        "date": "2020-01-01@10:20",
+        "duration": "2020-01-01@01:00",
+        "deadline": "2020-01-10@10:20",
+        "entryType": "TASK",
+        "addEntry": [{
+            "id": 11,
+            "userId": 1,
+            "title": "identify tasks in trello",
+            "description": "",
+            "date": "2020-01-01@10:20",
+            "duration": "2020-01-01@01:00",
+            "deadline": "2020-01-10@10:20",
+            "entryType": "TASK"
+          },
+          {
+            "id": 12,
+            "userId": 1,
+            "title": "create git repos",
+            "description": "",
+            "date": "2020-01-01@10:20",
+            "duration": "2020-01-01@01:00",
+            "deadline": "2020-01-10@10:20",
+            "entryType": "TASK",
+            "addEntry": [{
+                "id": 13,
+                "userId": 1,
+                "title": "back end",
+                "description": "",
+                "date": "2020-01-01@10:20",
+                "duration": "2020-01-01@01:00",
+                "deadline": "2020-01-10@10:20",
+                "entryType": "TASK"
+              },
+              {
+                "id": 14,
+                "userId": 1,
+                "title": "front end",
+                "description": "",
+                "date": "2020-01-01@10:20",
+                "duration": "2020-01-01@01:00",
+                "deadline": "2020-01-10@10:20",
+                "entryType": "TASK"
+              }
+            ]
+          },
+          {
+            "id": 15,
+            "userId": 1,
+            "title": "implementation",
+            "description": "",
+            "date": "2020-01-01@10:20",
+            "duration": "2020-01-01@01:00",
+            "deadline": "2020-01-10@10:20",
+            "entryType": "TASK"
+          }
+        ]
+      }
+    ]
+  }]
+}
